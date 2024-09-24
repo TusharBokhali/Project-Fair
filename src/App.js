@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
-
+import About from './Componets/About'
+import Shop from './Componets/Shop'
+import Blog from './Componets/Blog'
+import Contact from './Componets/Contact'
+import Search from './Images/Search.svg'
+import Logo from './Images/Main_Logo.png'
+import Home from './Componets/Home';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <div className="main">
+        <div className="container">
+            <nav>
+            <div className="logo">
+              <img src={Logo} alt="" />
+            </div>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Shop</li>
+              <li>Blog</li>
+              <li>Contact</li>
+            </ul>
+            <div className="search">
+              <input type="text" id="" placeholder='Your E-mail'/>
+              <button><img src={Search} /></button>
+            </div>
+            </nav>
+            <Home />
+        </div>
     </div>
+    </>
   );
 }
 
