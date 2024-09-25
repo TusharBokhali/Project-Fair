@@ -6,6 +6,8 @@ import Contact from './Componets/Contact'
 import Search from './Images/Search.svg'
 import Logo from './Images/Main_Logo.png'
 import Home from './Componets/Home';
+import Center from './Componets/Center';
+import Footer from './Componets/Footer'
 function App() {
   return (
     <>
@@ -27,7 +29,9 @@ function App() {
               <button><img src={Search} /></button>
             </div>
             </nav>
-            <Home />
+            {/* <Home /> */}
+            {/* <Center /> */}
+            <Footer />
         </div>
     </div>
     </>
